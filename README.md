@@ -8,3 +8,5 @@ Repositório destinado ao desenvolvimento do desafio para a segunda etapa do PS 
 * **Font-End:** Sérgio Victor dos Santos Dantas **;** Tainá Luise Dionisio de Almeida
 * **Back-End:** Anderson Henrique Nunes Medeiros de Oliveira **;** Marlon Victor Camara Alves **;** João Dantas Filho
 * **Adm-Fin:** José Augusto Dantas Gomes
+
+repo Front-End: https://github.com/tainalmeidaa/desafio-eject-squad-01-frontend.git
