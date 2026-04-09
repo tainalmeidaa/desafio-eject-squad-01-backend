@@ -20,5 +20,7 @@
     </p>
     <h2 class="blog-card__title">{{ post.title }}</h2>
     <p class="blog-card__excerpt">{{ post.excerpt }}</p>
+    <a class="button blog-card__action"
+       href="{% url "blog:post_detail" post.id %}">Ler mais</a>
   </div>
 </article>
