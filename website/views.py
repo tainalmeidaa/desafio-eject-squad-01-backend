@@ -7,3 +7,6 @@ def home(request):
 
 def about_us(request):
     return render(request, "website/about-us.html")
+
+def article_detail(request):
+    return render(request, "website/article.html")
