@@ -15,13 +15,13 @@
       <div id="primary-nav" class="navbar__menu">
         <ul class="navbar__list">
           <li>
-            <a href="home.html">Início</a>
+            <a href="{% url 'website:home' %}">Início</a>
           </li>
           <li>
-            <a href="blog.html">Blog</a>
+            <a href="#">Blog</a>
           </li>
           <li>
-            <a href="about-us.html">Sobre nós</a>
+            <a href="{% url 'website:about_us' %}">Sobre nós</a>
           </li>
         </ul>
         <a class="button button--nav" href="#">Fazer reserva</a>
