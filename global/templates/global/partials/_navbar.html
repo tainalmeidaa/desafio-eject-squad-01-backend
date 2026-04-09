@@ -1,0 +1,31 @@
+{% load static %}
+<header class="navbar-wrapper">
+  <nav class="navbar">
+    <div class="navbar__content">
+      <img class="navbar__logo"
+           src="{% static 'global/img/logos/apollo-logo.svg' %}"
+           alt="Logo Restaurante do Apollo" />
+      <button class="menu-toggle" type="button">
+        <span class="menu-toggle__icon">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </span>
+      </button>
+      <div id="primary-nav" class="navbar__menu">
+        <ul class="navbar__list">
+          <li>
+            <a href="home.html">Início</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="about-us.html">Sobre nós</a>
+          </li>
+        </ul>
+        <a class="button button--nav" href="#">Fazer reserva</a>
+      </div>
+    </div>
+  </nav>
+</header>
