@@ -1,0 +1,24 @@
+{% load static %}
+<article class="blog-card">
+  <figure class="blog-card__media">
+    <img src="{{ post.cover.url }}"
+         alt="{{ post.title }}"
+         width="800"
+         height="520"
+         loading="lazy"
+         decoding="async" />
+  </figure>
+  <div class="blog-card__body">
+    <p class="blog-card__date">
+      <img class="blog-card__date-icon"
+           src="{% static "blog/img/icons/calendar.svg" %}"
+           alt="Ícone de calendário"
+           width="16"
+           height="16"
+           decoding="async" />
+      <span>{{ post.published_at|date:"d \\d\\e F, Y" }}</span>
+    </p>
+    <h2 class="blog-card__title">{{ post.title }}</h2>
+    <p class="blog-card__excerpt">{{ post.excerpt }}</p>
+  </div>
+</article>
