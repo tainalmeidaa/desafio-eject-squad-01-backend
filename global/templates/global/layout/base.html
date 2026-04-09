@@ -13,10 +13,10 @@
   </head>
   <body>
     {% include "global/partials/_navbar.html" %}
-    <div>
+    <main class="page-content">
       {% block content %}
       {% endblock content %}
-    </div>
+    </main>
     {% include "global/partials/_footer.html" %}
     <script src="{% static "global/scripts/navbar.js" %}" defer></script>
     {% block extra_script %}
