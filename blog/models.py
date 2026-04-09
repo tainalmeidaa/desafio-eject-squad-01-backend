@@ -10,4 +10,6 @@ class Post(models.Model):
     content = models.TextField()
 
     class Meta:
+        verbose_name = "Postagem"
+        verbose_name_plural = "Postagens"
         ordering = ["-published_at"]
