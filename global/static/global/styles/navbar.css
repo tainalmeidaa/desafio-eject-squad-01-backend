@@ -45,6 +45,10 @@
   color: var(--color-orange);
 }
 
+.navbar__list a.is-active {
+  color: var(--color-orange);
+}
+
 .button--nav {
   flex-shrink: 0;
 }

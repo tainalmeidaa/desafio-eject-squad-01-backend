@@ -15,13 +15,16 @@
       <div id="primary-nav" class="navbar__menu">
         <ul class="navbar__list">
           <li>
-            <a href="{% url "website:home" %}">Início</a>
+            <a class="{% if request.resolver_match.url_name == 'home' and request.resolver_match.namespace == 'website' %}is-active{% endif %}"
+               href="{% url "website:home" %}">Início</a>
           </li>
           <li>
-            <a href="{% url "blog:home" %}">Blog</a>
+            <a class="{% if request.resolver_match.namespace == 'blog' %}is-active{% endif %}"
+               href="{% url "blog:home" %}">Blog</a>
           </li>
           <li>
-            <a href="{% url "website:about_us" %}">Sobre nós</a>
+            <a class="{% if request.resolver_match.url_name == 'about_us' and request.resolver_match.namespace == 'website' %}is-active{% endif %}"
+               href="{% url "website:about_us" %}">Sobre nós</a>
           </li>
         </ul>
         <a class="button button--nav" href="#">Fazer reserva</a>
