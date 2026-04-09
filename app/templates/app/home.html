@@ -1,0 +1,126 @@
+{% extends 'global/layout/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <script src="{% static "app/scripts/home-carousel.js" %}"></script>
+  <link rel="stylesheet" href="{% static "app/styles/home.css" %}">
+{% endblock extra_head %}
+{% block content %}
+  <section id="main-banner">
+    <h1 class="main-banner__title">
+      Restaurante do <span class="main-banner__highlight">Apollo</span>
+    </h1>
+    <p class="main-banner__subtitle">Uma experiência gastronômica inesquecível!</p>
+    <button class="button main-banner__button" type="button">Fazer reserva</button>
+  </section>
+  <section id="highlights-section">
+    <h2 class="section-heading">Destaques</h2>
+    <div class="card-list">
+      <article class="feature-card feature-card--hover">
+        <div class="feature-card__icon">
+          <img src="{% static "app/img/icons/highlight-chefs.svg" %}"
+               alt=""
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Chefs capacitados</h3>
+        <p class="feature-card__text">
+          Nossa equipe de chefs especializados criam pratos únicos com
+          técnicas refinadas.
+        </p>
+      </article>
+      <article class="feature-card feature-card--hover">
+        <div class="feature-card__icon">
+          <img src="{% static "app/img/icons/highlight-location.svg" %}"
+               alt=""
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Vantagens do local</h3>
+        <p class="feature-card__text">
+          Bem localizado e altamente confortável, aconchegante para você e
+          sua família.
+        </p>
+      </article>
+      <article class="feature-card feature-card--hover">
+        <div class="feature-card__icon">
+          <img src="{% static "app/img/icons/highlight-award.svg" %}"
+               alt=""
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Premiações</h3>
+        <p class="feature-card__text">
+          Reconhecido por diversas revistas gastronômicas e críticos
+          renomados.
+        </p>
+      </article>
+      <article class="feature-card feature-card--hover">
+        <div class="feature-card__icon">
+          <img src="{% static "app/img/icons/highlight-hours.svg" %}"
+               alt=""
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Horários</h3>
+        <p class="feature-card__text">Aberto todos os dias com horários estendidos. De 13h às 22h.</p>
+      </article>
+    </div>
+  </section>
+  <section id="promo-section">
+    <div class="promo__content">
+      <h1 class="promo__title">Venha conhecer a gente!</h1>
+      <h3 class="promo__subtitle">Aproveite a oportunidade!</h3>
+      <p class="promo__description">
+        Utilize os nossos 20% de desconto para você ter sua melhor
+        experiência.
+      </p>
+      <p class="promo__badge">SUA MELHOR EXPERIÊNCIA GASTRONÔMICA</p>
+      <p class="promo__stars">★★★★★</p>
+    </div>
+    <div class="promo__dishes">
+      <figure class="promo__dish promo__dish--back">
+        <img src="{% static "app/img/images/dish-1-back.jpg" %}"
+             alt="Prato em destaque 1" />
+      </figure>
+      <figure class="promo__dish promo__dish--middle">
+        <img src="{% static "app/img/images/dish-2-middle.jpg" %}"
+             alt="Prato em destaque 2" />
+      </figure>
+      <figure class="promo__dish promo__dish--front">
+        <img src="{% static "app/img/images/dish-3-front.jpg" %}"
+             alt="Prato em destaque 3" />
+      </figure>
+    </div>
+  </section>
+  <section id="space-section">
+    <h2 class="section-heading">Nosso espaço</h2>
+    <div class="carousel">
+      <div class="carousel__viewport">
+        <div class="carousel__slide">
+          <img src="{% static "app/img/images/carousel-slide-1.jpg" %}"
+               alt="Foto do espaço 1" />
+        </div>
+        <div class="carousel__slide">
+          <img src="{% static "app/img/images/carousel-slide-2.jpg" %}"
+               alt="Foto do espaço 2" />
+        </div>
+        <div class="carousel__slide">
+          <img src="{% static "app/img/images/carousel-slide-3.jpg" %}"
+               alt="Foto do espaço 3" />
+        </div>
+      </div>
+      <div class="carousel__dots" role="group" aria-label="Fotos do espaço">
+        <button type="button"
+                class="carousel__dot carousel__dot--active"
+                aria-label="Foto 1 de 3"
+                aria-current="true"></button>
+        <button type="button" class="carousel__dot" aria-label="Foto 2 de 3"></button>
+        <button type="button" class="carousel__dot" aria-label="Foto 3 de 3"></button>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
