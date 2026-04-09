@@ -18,5 +18,8 @@
       {% endblock content %}
     </div>
     {% include "global/partials/_footer.html" %}
+    <script src="{% static "global/scripts/navbar.js" %}" defer></script>
+    {% block extra_script %}
+    {% endblock extra_script %}
   </body>
 </html>
