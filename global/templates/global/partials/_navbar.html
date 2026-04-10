@@ -2,9 +2,11 @@
 <header class="navbar-wrapper">
   <nav class="navbar">
     <div class="navbar__content">
-      <img class="navbar__logo"
-           src="{% static 'global/img/logos/apollo-logo.svg' %}"
-           alt="Logo Restaurante do Apollo" />
+      <a href="{% url "website:home" %}">
+        <img class="navbar__logo"
+             src="{% static 'global/img/logos/apollo-logo.svg' %}"
+             alt="Logo Restaurante do Apollo" />
+      </a>
       <button class="menu-toggle" type="button">
         <span class="menu-toggle__icon">
           <span class="menu-toggle__bar"></span>
