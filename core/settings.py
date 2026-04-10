@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "home",
     "about_us",
+    "blog",
     "django_cleanup",
 ]
 
