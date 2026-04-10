@@ -54,7 +54,7 @@ def available_slots(request):
     try:
         target_date = datetime.date.fromisoformat(date_str)
         duration = int(duration_str)
-    except ValueError, TypeError:
+    except (ValueError, TypeError):
         return JsonResponse({"error": "Parâmetros inválidos."}, status=400)
 
     if duration not in VALID_DURATIONS:
