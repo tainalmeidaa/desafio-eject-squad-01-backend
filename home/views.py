@@ -11,3 +11,7 @@ def about_us(request):
 
 def blog(request):
     return render(request, "website/blog.html")
+
+
+def article(request):
+    return render(request, "website/article-detail.html")

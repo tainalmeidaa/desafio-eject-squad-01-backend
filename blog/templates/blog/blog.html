@@ -18,7 +18,7 @@
           <article class="blog-card">
             <figure class="blog-card__media">
               <img
-                src="src="{% "static" website/img/images/post-pasta.jpg" %}" 
+                src="{% static 'website/img/images/post-pasta.jpg' %}" 
                 alt="Penne ao molho de tomate com manjericão fresco."
                 width="800"
                 height="520"
@@ -30,7 +30,7 @@
               <p class="blog-card__date">
                 <img
                   class="blog-card__date-icon"
-                  src="assets/icons/blog/calendar.svg"
+                  src="{% static "blog/img/icons/calendar.svg" %}"
                   alt=""
                   width="16"
                   height="16"
@@ -44,7 +44,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris.
               </p>
-              <a class="button blog-card__action" href="article-detail.html"
+              <a class="button blog-card__action" href="{% url "blog:article" %}"
                 >Ler mais</a
               >
             </div>
@@ -81,7 +81,7 @@
                 Pellentesque habitant morbi tristique senectus et netus. Integer
                 vitae justo eget magna fermentum iaculis eu non diam.
               </p>
-              <a class="button blog-card__action" href="#">Ler mais</a>
+              <a class="button blog-card__action" href="{% url 'article-detail/'%}"
             </div>
           </article>
 
@@ -117,7 +117,7 @@
                 posuere cubilia curae; Donec velit neque, auctor sit amet
                 aliquam vel.
               </p>
-              <a class="button blog-card__action" href="#">Ler mais</a>
+              <a class="button blog-card__action" href="{% url 'article-detail/'%}"
             </div>
           </article>
 
@@ -150,7 +150,7 @@
                 dapibus vivamus elementum semper nisi. Aenean vulputate eleifend
                 tellus; aenean leo ligula, porttitor eu consequat vitae.
               </p>
-              <a class="button blog-card__action" href="#">Ler mais</a>
+              <a class="button blog-card__action" href="{% url 'article-detail/'%}"
             </div>
           </article>
         </div>
