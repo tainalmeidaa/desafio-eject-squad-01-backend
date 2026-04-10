@@ -34,7 +34,7 @@ def get_available_slots(target_date, duration_minutes):
     current = open_dt
     while current + duration_td <= close_dt:
         slots.append(current.time())
-        current += datetime.timedelta(minutes=30)
+        current += duration_td
 
     now = timezone.localtime()
     if target_date == now.date():
