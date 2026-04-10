@@ -7,7 +7,6 @@ from django.utils import timezone
 TOTAL_TABLES = 28
 
 DURATION_CHOICES = [
-    (30, "30 min"),
     (60, "1 h"),
     (90, "1 h 30 min"),
     (120, "2 h"),
