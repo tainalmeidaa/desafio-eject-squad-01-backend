@@ -1,0 +1,144 @@
+.footer {
+  background: var(--color-black);
+  width: 100%;
+  padding: var(--space-xl) var(--section-inline) var(--gap-section);
+}
+
+.footer__logo {
+  max-width: var(--container-max);
+  margin: 0 auto var(--gap-section);
+}
+
+.footer__logo img {
+  display: block;
+  max-width: 16rem;
+  margin: 0;
+}
+
+.footer__info {
+  display: grid;
+  grid-template-columns: 1.8fr 1.5fr 1fr 1.2fr;
+  gap: var(--gap-grid);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  color: var(--color-white);
+  line-height: 1.5;
+}
+
+.footer__contact,
+.footer__hours,
+.footer__social,
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer__info h3 {
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer__contact-item img {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: var(--gap-grid);
+}
+
+.footer__social-icons img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.footer__location img {
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.footer__bottom {
+  max-width: var(--container-max);
+  margin: var(--gap-section) auto 0;
+}
+
+.footer__bottom hr {
+  border: none;
+  height: 1px;
+  background-color: #6c6c6c;
+  margin-bottom: var(--space-sm);
+}
+
+.footer__credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-weight: 300;
+  color: #8e8e8e;
+}
+
+.footer__credits img {
+  width: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--gap-section) 1.6rem var(--space-sm);
+  }
+
+  .footer__logo img {
+    max-width: 10rem;
+  }
+
+  .footer__info {
+    grid-template-columns: 1fr auto;
+    gap: var(--space-md);
+  }
+
+  .footer__contact {
+    grid-column: 1 / -1;
+  }
+
+  .footer__hours {
+    grid-column: 1;
+  }
+
+  .footer__social {
+    grid-column: 2;
+    align-self: end;
+    padding-bottom: var(--space-xs);
+  }
+
+  .footer__social h3 {
+    display: none;
+  }
+
+  .footer__social-icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer__contact-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .footer__location {
+    display: none;
+  }
+
+  .footer__credits img {
+    width: 2rem;
+  }
+}

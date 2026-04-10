@@ -1,0 +1,78 @@
+{% load static %}
+<footer class="footer">
+  <div class="footer__logo">
+    <img src="{% static 'global/img/logos/apollo-logo.svg' %}"
+         alt="Logo Restaurante do Apollo" />
+  </div>
+  <div class="footer__info">
+    <div class="footer__contact">
+      <h3>Contato</h3>
+      <div class="footer__contact-item">
+        <img src="{% static 'global/img/icons/icon-phone.svg' %}"
+             alt=""
+             width="24"
+             height="24"
+             decoding="async" />
+        <span>(11) 92234-5678</span>
+      </div>
+      <div class="footer__contact-item">
+        <img src="{% static 'global/img/icons/icon-email.svg' %}"
+             alt=""
+             width="24"
+             height="24"
+             decoding="async" />
+        <span>RestauranteApollo@gmail.com</span>
+      </div>
+      <div class="footer__contact-item">
+        <img src="{% static 'global/img/icons/icon-address.svg' %}"
+             alt=""
+             width="24"
+             height="24"
+             decoding="async" />
+        <span>Avenida Roberto Freire, 123 - Natal/RN</span>
+      </div>
+    </div>
+    <div class="footer__hours">
+      <h3>Horário de funcionamento</h3>
+      <span>Segunda à sexta: 13h - 22h</span>
+      <span>Sábado e domingo: 12h - 22h</span>
+      <span>Feriados: 12h - 22h</span>
+    </div>
+    <div class="footer__social">
+      <h3>Redes sociais</h3>
+      <div class="footer__social-icons">
+        <img src="{% static 'global/img/icons/icon-facebook.svg' %}"
+             alt=""
+             width="24"
+             height="24"
+             decoding="async" />
+        <img src="{% static 'global/img/icons/icon-instagram.svg' %}"
+             alt=""
+             width="24"
+             height="24"
+             decoding="async" />
+        <img src="{% static 'global/img/icons/icon-twitter.svg' %}"
+             alt=""
+             width="24"
+             height="24"
+             decoding="async" />
+      </div>
+    </div>
+    <div class="footer__location">
+      <iframe title="Mapa do Restaurante Apollo"
+              src="https://www.google.com/maps?q=Avenida+Roberto+Freire,+123+-+Natal/RN&output=embed"
+              width="100%"
+              height="180"
+              style="border:0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <hr />
+    <div class="footer__credits">
+      <span>2026 - MISSÃO EJECT</span>
+      <img src="{% static 'global/img/logos/eject-logo.svg' %}" alt="Logo Eject" />
+    </div>
+  </div>
+</footer>

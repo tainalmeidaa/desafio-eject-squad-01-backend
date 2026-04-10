@@ -1,0 +1,279 @@
+{% extends 'global/layout/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'website/styles/about-us.css' %}">
+{% endblock extra_head %}
+{% block content %}
+  <section id="about-us">
+    <h1>Sobre nós</h1>
+    <p>
+      Conheça a história do Apollo, referência em gastronomia italiana em
+      Natal!
+    </p>
+  </section>
+  <section id="our-history">
+    <h2 class="section-heading">Nossa história</h2>
+    <div class="history__grid">
+      <div class="history__text history__text--1">
+        <p>
+          O Restaurante Apollo nasceu do sonho de Ricardo Silva, um
+          empreendedor apaixonado por gastronomia e experiências memoráveis.
+          Aos 38 anos, após anos vivenciando diferentes culturas culinárias
+          e observando tendências internacionais, Ricardo decidiu trazer
+          para Natal um conceito ainda pouco explorado: a sofisticação da
+          alta gastronomia italiana, com raízes nas regiões da Itália e
+          olhar contemporâneo sobre tradição, técnica e produto.
+        </p>
+        <p>
+          Fundado há cinco anos, o Apollo surgiu com a proposta de ser mais
+          do que um restaurante — um destino. Inspirado na elegância e no
+          simbolismo do nome "Apollo", que remete à perfeição, à arte e à
+          harmonia, Ricardo idealizou um espaço onde cada detalhe fosse
+          cuidadosamente pensado: da arquitetura minimalista à apresentação
+          impecável dos pratos.
+        </p>
+        <p>
+          Desde o início, o restaurante se destacou pelo compromisso com
+          ingredientes frescos, técnicas refinadas e uma equipe altamente
+          qualificada. A cozinha, liderada por profissionais experientes,
+          combina tradição italiana e criatividade, criando pratos que
+          equilibram sabor, estética e identidade. Massas frescas e molhos
+          de longa cocção, antipasti, risotos e dolci clássicos tornaram-se
+          marcas registradas da casa.
+        </p>
+      </div>
+      <figure class="history__image history__image--1">
+        <img src="{% static "website/img/images/our-history-1.png" %}"
+             alt="Salão do restaurante com mesas de madeira, cadeiras estofadas e iluminação pendente."
+             loading="lazy" />
+      </figure>
+      <div class="history__text history__text--2">
+        <p>
+          Hoje, consolidado no mercado local, o Apollo vive um novo momento:
+          expansão e modernização. Sem abrir mão da sua essência, o
+          restaurante busca integrar ainda mais tecnologia e inovação à
+          experiência gastronômica, reforçando seu posicionamento como
+          referência em alta gastronomia italiana na cidade.
+        </p>
+        <p>
+          Mais do que servir refeições, o Apollo cria memórias — seja em um
+          jantar romântico, uma celebração especial ou um encontro de
+          negócios. Cada visita é pensada para ser única, elegante e
+          inesquecível.
+        </p>
+      </div>
+      <figure class="history__image history__image--2">
+        <img src="{% static "website/img/images/our-history-2.png" %}"
+             alt="Chef em uniforme branco temperando uma salada no balcão da cozinha."
+             loading="lazy" />
+      </figure>
+    </div>
+  </section>
+  <section id="mission-vision-values">
+    <h2 class="section-heading">Missão, visão e valores</h2>
+    <div class="card-list">
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/mvv-mission.svg" %}"
+               alt="Ícone de alvo representando missão"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Missão</h3>
+        <p class="feature-card__text">
+          Proporcionar experiências gastronômicas memoráveis com excelência
+          na culinária italiana, ingredientes frescos e técnicas refinadas.
+          Complementar isso com atendimento acolhedor e experiência digital
+          prática e sofisticada.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/mvv-vision.svg" %}"
+               alt="Ícone de olho representando visão"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Visão</h3>
+        <p class="feature-card__text">
+          Ser reconhecido como o principal destino de gastronomia italiana
+          em Natal, destacando-se pela inovação, qualidade excepcional e
+          pela criação de momentos memoráveis para cada cliente.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/mvv-values.svg" %}"
+               alt="Ícone de coração representando valores"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Valores</h3>
+        <p class="feature-card__text">
+          Excelência na culinária italiana, no atendimento e no ambiente,
+          com paixão por cozinhar e servir bem. Transparência na origem dos
+          ingredientes, no trabalho da equipe e nas histórias por trás de
+          cada prato, com respeito à temporada e à tradição italiana.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section id="our-team" class="team-section">
+    <header class="team__header">
+      <h2 class="section-heading team__title">Nossa equipe</h2>
+      <p class="team__subtitle">Conheça os profissionais mais talentosos da casa!</p>
+    </header>
+    <div class="team__grid">
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{% static "website/img/images/ricardo.jpeg" %}"
+               alt="Retrato do chef executivo Ricardo Almeida."
+               width="400"
+               height="400"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <h3 class="team-card__name">Ricardo Almeida</h3>
+        <p class="team-card__role">Chef Executivo</p>
+        <p class="team-card__bio">Com formação em culinária mediterrânea na Europa.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{% static "website/img/images/camila.jpeg" %}"
+               alt="Retrato da sous-chef Camila Duarte."
+               width="400"
+               height="400"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <h3 class="team-card__name">Camila Duarte</h3>
+        <p class="team-card__role">Sous-chef</p>
+        <p class="team-card__bio">Especialista em frutos do mar.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{% static "website/img/images/lucas.jpeg" %}"
+               alt="Retrato do chef de partie Lucas Fernandes, massas."
+               width="400"
+               height="400"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <h3 class="team-card__name">Lucas Fernandes</h3>
+        <p class="team-card__role">Chef de Partie (Massas)</p>
+        <p class="team-card__bio">Apaixonado pela gastronomia italiana.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{% static "website/img/images/juliana.jpeg" %}"
+               alt="Retrato da chef de partie Juliana Rocha, sobremesas."
+               width="400"
+               height="400"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <h3 class="team-card__name">Juliana Rocha</h3>
+        <p class="team-card__role">Chef de Partie (Sobremesas)</p>
+        <p class="team-card__bio">Formada em confeitaria fina.</p>
+      </article>
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{% static "website/img/images/andre.jpeg" %}"
+               alt="Retrato do garçom sommelier André Martins."
+               width="400"
+               height="400"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <h3 class="team-card__name">André Martins</h3>
+        <p class="team-card__role">Garçom Sommelier</p>
+        <p class="team-card__bio">
+          Orienta os clientes na escolha de vinhos que elevam a experiência
+          gastronômica.
+        </p>
+      </article>
+      <article class="team-card">
+        <div class="team-card__media">
+          <img src="{% static "website/img/images/beatriz.jpeg" %}"
+               alt="Retrato da garçonete Beatriz Nunes."
+               width="400"
+               height="400"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <h3 class="team-card__name">Beatriz Nunes</h3>
+        <p class="team-card__role">Garçonete</p>
+        <p class="team-card__bio">Reconhecida pelo atendimento acolhedor e atencioso.</p>
+      </article>
+    </div>
+  </section>
+  <section id="our-services">
+    <h2 class="section-heading">Nossos serviços</h2>
+    <div class="card-list">
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/service-rodizio.svg" %}"
+               alt="Ícone de talheres cruzados representando o serviço de rodízio"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Rodízio</h3>
+        <p class="feature-card__text">
+          Sequência à mesa com cortes nobres, massas frescas e clássicos da
+          cozinha italiana servidos no ritmo ideal, para saborear cada
+          passagem com o mesmo cuidado de um jantar em família na Itália.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/service-a-la-carte.svg" %}"
+               alt="Ícone de cardápio representando o menu à la carte premium"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Menu à la carte premium</h3>
+        <p class="feature-card__text">
+          Clássicos e criações autorais da tradição italiana à escolha do
+          cliente, com ingredientes selecionados e técnicas precisas. Cada
+          pedido reflete o padrão premium da casa, do antipasto ao dolce.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/service-events.svg" %}"
+               alt="Ícone de grupo de pessoas representando eventos privativos e corporativos"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Eventos privativos e corporativos</h3>
+        <p class="feature-card__text">
+          Espaços e menus italianos sob medida para celebrações, jantares
+          corporativos e encontros especiais. Equipe dedicada e atendimento
+          personalizado do aperitivo ao brinde final.
+        </p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon">
+          <img src="{% static "website/img/icons/service-wines.svg" %}"
+               alt="Ícone de taça de vinho representando vinhos especializados"
+               width="36"
+               height="36"
+               decoding="async" />
+        </div>
+        <h3 class="feature-card__label">Vinhos especializados</h3>
+        <p class="feature-card__text">
+          Carta com destaque para vinhos italianos — do Veneto à Toscana —
+          complementada por rótulos selecionados de outras origens.
+          Sugestões de harmonização para massas, carnes e peixes da nossa
+          cozinha.
+        </p>
+      </article>
+    </div>
+  </section>
+{% endblock content %}

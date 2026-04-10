@@ -1,0 +1,10 @@
+{
+  "[django-html]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "monosans.djlint",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  }
+}

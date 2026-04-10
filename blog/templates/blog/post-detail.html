@@ -1,0 +1,43 @@
+{% extends "global/layout/base.html" %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static "blog/styles/post-detail.css" %}">
+{% endblock extra_head %}
+{% block content %}
+  <div class="article-page">
+    <article class="article">
+      <header class="article__header">
+        <h1 class="article__title">{{ post.title }}</h1>
+        <div class="article__line"></div>
+      </header>
+      <div class="article__meta">
+        <div>
+          <p class="article__byline">
+            Por <strong>{{ post.author_name }}</strong>
+          </p>
+          <p class="article__date">
+            <img class="article__date-icon"
+                 src="{% static "blog/img/icons/calendar.svg" %}"
+                 alt="Ícone de calendário"
+                 width="16"
+                 height="16"
+                 decoding="async" />
+            <span>{{ post.published_at|date:"d/m/Y" }}</span>
+          </p>
+        </div>
+      </div>
+      <figure class="article__figure">
+        <img src="{{ post.cover.url }}"
+             alt="{{ post.title }}"
+             width="1200"
+             height="780"
+             loading="eager"
+             decoding="async" />
+      </figure>
+      <div class="article__body">{{ html_content|safe }}</div>
+      <footer class="article__footer">
+        <a class="button" href="{% url "blog:home" %}">Voltar ao blog</a>
+      </footer>
+    </article>
+  </div>
+{% endblock content %}
