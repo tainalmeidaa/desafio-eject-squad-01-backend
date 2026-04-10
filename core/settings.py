@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "blog",
     "reservations",
     "django_cleanup",
+    "markdownx",
 ]
 
 MIDDLEWARE = [
@@ -85,3 +86,5 @@ STATICFILES_DIRS = [BASE_DIR / "global" / "static"]
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+MARKDOWNX_MEDIA_PATH = "images/"

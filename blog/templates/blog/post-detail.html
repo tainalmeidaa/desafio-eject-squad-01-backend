@@ -1,4 +1,4 @@
-{% extends 'global/layout/base.html' %}
+{% extends "global/layout/base.html" %}
 {% load static %}
 {% block extra_head %}
   <link rel="stylesheet" href="{% static "blog/styles/post-detail.css" %}">
@@ -34,7 +34,7 @@
              loading="eager"
              decoding="async" />
       </figure>
-      <div class="article__body">{{ post.content|linebreaks }}</div>
+      <div class="article__body">{{ html_content|safe }}</div>
       <footer class="article__footer">
         <a class="button" href="{% url "blog:home" %}">Voltar ao blog</a>
       </footer>

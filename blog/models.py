@@ -1,4 +1,5 @@
 from django.db import models
+from markdownx.models import MarkdownxField
 
 
 class Post(models.Model):
@@ -7,7 +8,7 @@ class Post(models.Model):
     published_at = models.DateTimeField(auto_now_add=True)
     cover = models.ImageField(upload_to="images")
     author_name = models.CharField(max_length=50)
-    content = models.TextField()
+    content = MarkdownxField()
 
     class Meta:
         verbose_name = "Postagem"

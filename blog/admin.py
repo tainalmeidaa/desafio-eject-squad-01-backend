@@ -1,10 +1,11 @@
 from django.contrib import admin
+from markdownx.admin import MarkdownxModelAdmin
 
 from blog.models import Post
 
 
 @admin.register(Post)
-class PostAdmin(admin.ModelAdmin):
+class PostAdmin(MarkdownxModelAdmin):
     list_display = ("id", "title", "author_name", "published_at", "cover")
     list_display_links = ("title",)
     list_filter = ("published_at", "author_name")
