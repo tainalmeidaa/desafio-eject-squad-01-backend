@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, render
 
-from blog.models import Post
+from about_us.models import Post
 
 
 def home(request):
