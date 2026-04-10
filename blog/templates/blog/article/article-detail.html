@@ -13,7 +13,7 @@
         <div class="article__meta">
           <img
             class="article__author-photo"
-            src="assets/images/blog/author-alessandro-marino.jpg"
+            src="{% static 'blog/img/author-alessandro-marino.jpg' %}" 
             alt="Retrato de Alessandro Marino, autor do artigo."
             width="128"
             height="128"
@@ -73,7 +73,7 @@
           </p>
           <figure class="article__figure">
             <img
-              src="assets/images/blog/post-ingredients.jpg"
+              src="{% static 'blog/img/post-ingredients.jpg'%}"
               alt="Temperos e ervas usados na cozinha italiana."
               width="1200"
               height="780"
@@ -104,7 +104,30 @@
           </p>
           <figure class="article__figure">
             <img
-              src="assets/images/blog/post-dessert.jpg"
+              src="{% static 'blog/img/post-dessert.jpg'%}"
+              alt="Sobremesa italiana com chocolate e morangos."
+              width="1200"
+              height="780"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="article__caption">
+              <span class="article__caption-line"></span>
+              <span
+                >Todas as imagens ocupam a linha inteira do bloco de
+                conteúdo.</span
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+            tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+            quo minus id quod maxime placeat facere possimus, omnis voluptas
+            assumenda est, omnis dolor repellendus.
+          </p>
+          <figure class="article__figure">
+            <img
+              src="{% static 'blog/img/images/post-wine.jpg'%}"
               alt="Sobremesa italiana com chocolate e morangos."
               width="1200"
               height="780"
