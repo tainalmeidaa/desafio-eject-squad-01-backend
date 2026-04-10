@@ -1,0 +1,137 @@
+body {
+  background-color: var(--color-gray);
+}
+
+.article-page {
+  padding: var(--space-xl) var(--section-inline) var(--space-2xl);
+}
+
+.article {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border-radius: 1.2rem;
+  box-shadow: 0 0.4rem 2.4rem rgba(38, 38, 38, 0.08);
+  padding: var(--space-xl);
+}
+
+.article__title {
+  font-weight: 700;
+  color: var(--color-orange);
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+.article__line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(38, 38, 38, 0.12);
+  margin-bottom: var(--space-lg);
+}
+
+.article__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.article__author-photo {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.article__byline {
+  color: var(--color-black);
+  line-height: 1.45;
+}
+
+.article__byline strong {
+  font-weight: 700;
+}
+
+.article__date {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+  color: var(--color-black);
+  opacity: 0.65;
+}
+
+.article__date-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.article__figure {
+  margin: 0 0 var(--space-lg);
+  width: 100%;
+}
+
+.article__figure img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.article__caption {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+  color: var(--color-black);
+  opacity: 0.72;
+  line-height: 1.4;
+}
+
+.article__caption-line {
+  flex-shrink: 0;
+  width: 3.2rem;
+  height: 0.2rem;
+  background-color: var(--color-orange);
+  border-radius: 0.1rem;
+}
+
+.article__body {
+  color: var(--color-black);
+}
+
+.article__body > p {
+  margin-bottom: var(--space-md);
+}
+
+.article__body > .article__figure {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.article__highlight {
+  display: block;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-orange);
+  margin: var(--gap-section) 0;
+  line-height: 1.5;
+}
+
+.article__footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-sm);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .article-page {
+    padding: var(--space-lg) 1.6rem var(--space-xl);
+  }
+
+  .article {
+    padding: var(--gap-section) var(--gap-section) var(--space-xl);
+    border-radius: var(--radius-md);
+  }
+}

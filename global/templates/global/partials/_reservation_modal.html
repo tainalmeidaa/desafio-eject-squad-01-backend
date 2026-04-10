@@ -1,0 +1,78 @@
+{% load static %}
+<div class="reservation-modal" data-reservation-modal hidden>
+  <div class="reservation-modal__backdrop" data-reservation-close></div>
+  <div class="reservation-modal__dialog"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="reservation-modal-title">
+    <button class="reservation-modal__close"
+            type="button"
+            aria-label="Fechar modal"
+            data-reservation-close>
+      <img src="{% static 'global/img/icons/icon-close.svg' %}"
+           alt="Ícone de fechar (X)"
+           width="20"
+           height="20">
+    </button>
+    <h2 id="reservation-modal-title" class="reservation-modal__title">Fazer reserva</h2>
+    <form method="post"
+          action="{% url 'reservations:create_reservation' %}"
+          class="reservation-modal__form"
+          data-reservation-form
+          data-slots-url="{% url 'reservations:available_slots' %}">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ request.get_full_path }}">
+      <label for="id_customer_name">Nome completo</label>
+      <input type="text"
+             name="customer_name"
+             id="id_customer_name"
+             placeholder="Ex.: Maria Silva"
+             maxlength="50"
+             required>
+      <label for="id_party_size">Quantidade de pessoas (1 a 6)</label>
+      <input type="number"
+             name="party_size"
+             id="id_party_size"
+             placeholder="Ex.: 4"
+             min="1"
+             max="6"
+             required>
+      <label for="id_date">Data da reserva</label>
+      <input type="date" name="date" id="id_date" required data-reservation-date>
+      <fieldset class="reservation-modal__duration">
+        <legend>Duração da reserva</legend>
+        <div class="reservation-modal__duration-options">
+          <label class="reservation-modal__radio">
+            <input type="radio" name="duration" value="30" data-reservation-duration>
+            <span>30 min</span>
+          </label>
+          <label class="reservation-modal__radio">
+            <input type="radio" name="duration" value="60" data-reservation-duration>
+            <span>1 h</span>
+          </label>
+          <label class="reservation-modal__radio">
+            <input type="radio" name="duration" value="90" data-reservation-duration>
+            <span>1 h 30 min</span>
+          </label>
+          <label class="reservation-modal__radio">
+            <input type="radio" name="duration" value="120" data-reservation-duration>
+            <span>2 h</span>
+          </label>
+          <label class="reservation-modal__radio">
+            <input type="radio" name="duration" value="150" data-reservation-duration>
+            <span>2 h 30 min</span>
+          </label>
+        </div>
+      </fieldset>
+      <label for="id_start_time">Horário de início</label>
+      <select name="start_time"
+              id="id_start_time"
+              required
+              disabled
+              data-reservation-start-time>
+        <option value="">Escolha a data e a duração primeiro</option>
+      </select>
+      <button class="button" type="submit">Enviar reserva</button>
+    </form>
+  </div>
+</div>

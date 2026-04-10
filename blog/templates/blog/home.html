@@ -1,0 +1,23 @@
+{% extends 'global/layout/base.html' %}
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static "blog/styles/home.css" %}">
+{% endblock extra_head %}
+{% block content %}
+  <section class="blog-banner">
+    <h1>Curiosidades gastronômicas</h1>
+    <p class="blog-banner__subtitle">
+      Descubra a história fascinante por trás dos ingredientes e pratos que
+      amamos
+    </p>
+  </section>
+  <section class="blog-list">
+    <div class="blog-grid">
+      {% for post in posts %}
+        {% include "blog/partials/_post-card.html" %}
+      {% empty %}
+        <p class="blog-grid__empty">Ainda não existem posts publicados.</p>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock content %}
