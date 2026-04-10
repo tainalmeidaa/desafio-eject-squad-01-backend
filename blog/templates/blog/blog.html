@@ -1,0 +1,160 @@
+{% load static %}
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static "blog/styles/blog.css" %}">
+  <link rel="stylesheet" href="{% static "blog/styles/global.css" %}">
+{% endblock extra_head %}
+  <body>
+    <main>
+      <section class="blog-banner">
+        <h1>Curiosidades gastronômicas</h1>
+        <p class="blog-banner__subtitle">
+          Descubra a história fascinante por trás dos ingredientes e pratos que
+          amamos
+        </p>
+      </section>
+
+      <section class="blog-list">
+        <div class="blog-grid">
+          <article class="blog-card">
+            <figure class="blog-card__media">
+              <img
+                src="src="{% "static" website/img/images/post-pasta.jpg" %}" 
+                alt="Penne ao molho de tomate com manjericão fresco."
+                width="800"
+                height="520"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="blog-card__body">
+              <p class="blog-card__date">
+                <img
+                  class="blog-card__date-icon"
+                  src="assets/icons/blog/calendar.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                  decoding="async"
+                />
+                <span>10 de março, 2026</span>
+              </p>
+              <h2 class="blog-card__title">Os segredos da massa italiana</h2>
+              <p class="blog-card__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </p>
+              <a class="button blog-card__action" href="article-detail.html"
+                >Ler mais</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <figure class="blog-card__media">
+              <img
+                src="assets/images/blog/post-ingredients.jpg"
+                alt="Temperos e ervas frescas para a cozinha italiana."
+                width="800"
+                height="520"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="blog-card__body">
+              <p class="blog-card__date">
+                <img
+                  class="blog-card__date-icon"
+                  src="assets/icons/blog/calendar.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                  decoding="async"
+                />
+                <span>5 de março, 2026</span>
+              </p>
+              <h2 class="blog-card__title">
+                A importância dos ingredientes naturais
+              </h2>
+              <p class="blog-card__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus. Integer
+                vitae justo eget magna fermentum iaculis eu non diam.
+              </p>
+              <a class="button blog-card__action" href="#">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <figure class="blog-card__media">
+              <img
+                src="assets/images/blog/post-dessert.jpg"
+                alt="Sobremesa de chocolate com morangos."
+                width="800"
+                height="520"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="blog-card__body">
+              <p class="blog-card__date">
+                <img
+                  class="blog-card__date-icon"
+                  src="assets/icons/blog/calendar.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                  decoding="async"
+                />
+                <span>28 de fevereiro, 2026</span>
+              </p>
+              <h2 class="blog-card__title">
+                Doçaria italiana: tradição e sabor
+              </h2>
+              <p class="blog-card__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae; Donec velit neque, auctor sit amet
+                aliquam vel.
+              </p>
+              <a class="button blog-card__action" href="#">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <figure class="blog-card__media">
+              <img
+                src="assets/images/blog/post-wine.jpg"
+                alt="Vinho tinto sendo servido em taça."
+                width="800"
+                height="520"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="blog-card__body">
+              <p class="blog-card__date">
+                <img
+                  class="blog-card__date-icon"
+                  src="assets/icons/blog/calendar.svg"
+                  alt=""
+                  width="16"
+                  height="16"
+                  decoding="async"
+                />
+                <span>20 de fevereiro, 2026</span>
+              </p>
+              <h2 class="blog-card__title">Harmonização: vinhos e a cozinha</h2>
+              <p class="blog-card__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                dapibus vivamus elementum semper nisi. Aenean vulputate eleifend
+                tellus; aenean leo ligula, porttitor eu consequat vitae.
+              </p>
+              <a class="button blog-card__action" href="#">Ler mais</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

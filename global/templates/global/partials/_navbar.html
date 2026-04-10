@@ -20,7 +20,7 @@
           </li>
           <li>
             <a class="{% if request.resolver_match.namespace == 'blog' %}is-active{% endif %}"
-               href="{% url "about_us:home" %}">Blog</a>
+               href="{% url "home:blog" %}">Blog</a>
           </li>
           <li>
             <a class="{% if request.resolver_match.url_name == 'about_us' and request.resolver_match.namespace == 'home' %}is-active{% endif %}"
