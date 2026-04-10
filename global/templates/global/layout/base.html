@@ -8,17 +8,31 @@
     <link rel="stylesheet" href="{% static "global/styles/base.css" %}">
     <link rel="stylesheet" href="{% static "global/styles/navbar.css" %}">
     <link rel="stylesheet" href="{% static "global/styles/footer.css" %}">
+    <link rel="stylesheet"
+          href="{% static "global/styles/toast-messages.css" %}">
+    <link rel="stylesheet"
+          href="{% static "global/styles/reservation-modal.css" %}">
     {% block extra_head %}
     {% endblock extra_head %}
   </head>
   <body>
     {% include "global/partials/_navbar.html" %}
+    {% if messages %}
+      <div class="global-messages" aria-live="polite" aria-atomic="true">
+        {% for message in messages %}
+          {% include "global/partials/_toast-message.html" %}
+        {% endfor %}
+      </div>
+    {% endif %}
     <main class="page-content">
       {% block content %}
       {% endblock content %}
     </main>
     {% include "global/partials/_footer.html" %}
+    {% include "global/partials/_reservation_modal.html" %}
     <script src="{% static "global/scripts/navbar.js" %}" defer></script>
+    <script src="{% static "global/scripts/reservation-modal.js" %}" defer></script>
+    <script src="{% static "global/scripts/toast-messages.js" %}" defer></script>
     {% block extra_script %}
     {% endblock extra_script %}
   </body>
